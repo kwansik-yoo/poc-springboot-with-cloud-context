@@ -50,6 +50,9 @@ public class Main {
 > bootstrap.yml를 로드하지 않는다.    
 
 - 종속성 추가
+[version compatibility](https://spring.io/projects/spring-cloud#:~:text=Table%201.%20Release%20train%20Spring%20Boot%20compatibility)    
+![img.png](docs/assets/version_compatibility.png) 
+
 
 ```
     implementation("org.springframework.cloud:spring-cloud-starter-bootstrap:3.1.5")
@@ -68,7 +71,7 @@ public void inspect() {
 
 - 사전에 aws secrets manager에 다음과 같이 미리 등록해놓았다.    
 
-![img.png](docs/assets/img.png)     
+![img.png](docs/assets/aws_secret_manager.png)     
 
 - 다음과 같이 작성한다.
 ```yaml
