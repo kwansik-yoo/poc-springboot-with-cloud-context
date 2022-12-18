@@ -5,3 +5,5 @@ logging:
   level:
     root: info
     com.example: debug
+
+fooFromAws: ${foo.bar}

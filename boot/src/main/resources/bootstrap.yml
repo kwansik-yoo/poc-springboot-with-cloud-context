@@ -1,2 +1,12 @@
 external:
   foo: 'external-foo'
+
+cloud:
+  aws:
+    region:
+      static: ap-northeast-2
+
+aws:
+  secretsmanager:
+    prefix: "/secret"
+    name: "foo"

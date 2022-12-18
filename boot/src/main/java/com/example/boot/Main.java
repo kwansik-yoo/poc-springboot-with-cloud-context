@@ -15,6 +15,12 @@ public class Main {
     @Value("${external.foo:undefined}")
     private String externalFoo;
 
+    @Value("${foo.bar:undefined}")
+    private String awsProps;
+
+    @Value("${fooFromAws:undefined}")
+    private String fooFromAws;
+
     public static void main(String[] args) {
         SpringApplication.run(Main.class, args);
     }
@@ -24,5 +30,7 @@ public class Main {
     public void inspect() {
         log.debug("internal : {}", internalFoo);
         log.debug("external : {}", externalFoo);
+        log.debug("awsProps : {}", awsProps);
+        log.debug("fooFromAws : {}", fooFromAws);
     }
 }
